@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                mvn compile
+                echo "Build Pipeline DEMO"
             }
         }
         stage('deploy') {
             steps {
-                mvn package
+                echo "DEeploy Pipeline DEMO"
             }
         }
     }
