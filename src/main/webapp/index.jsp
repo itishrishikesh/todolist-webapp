@@ -11,8 +11,8 @@
                     console.log("2 - document.getElementById("task_list").innerHTML");
                 }
             </script>
-    <input type="text" id = "task" onclick="addTask();"/>
-    <button>add task</button>
+    <input type="text" id = "task"/>
+    <button  onclick="addTask();">add task</button>
     <div id="task_list"></div>
 </body>
 </html>
