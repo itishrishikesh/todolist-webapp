@@ -10,9 +10,10 @@
                     document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML;
                     console.log("2 - document.getElementById("task_list").innerHTML");
                 }
+                document.getElementById("btnAddTask").addEventListener("click", addTask, false);
             </script>
     <input type="text" id = "task"/>
-    <button  onclick="addTask();">add task</button>
+    <button id="btnAddTask">add task</button>
     <div id="task_list"></div>
 </body>
 </html>
