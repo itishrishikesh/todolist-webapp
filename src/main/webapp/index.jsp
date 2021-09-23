@@ -1,17 +1,17 @@
 <html>
     <head>
-        <script type="text/javascript">
-            function addTask(){
-                console.log("Inside AddTask Function")
-                console.log("1 - " + document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML)
-                document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML
-                console.log("2 - document.getElementById("task_list").innerHTML")
-            }
-        </script>
+        <title>todolist</title>
     </head>
 <body>
-    
-    <input type="text" id = "task" onclick="addTask()"/>
+    <script type="text/javascript">
+                function addTask(){
+                    console.log("Inside AddTask Function");
+                    console.log("1 - " + document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML);
+                    document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML;
+                    console.log("2 - document.getElementById("task_list").innerHTML");
+                }
+            </script>
+    <input type="text" id = "task" onclick="addTask();"/>
     <button>add task</button>
     <div id="task_list"></div>
 </body>
