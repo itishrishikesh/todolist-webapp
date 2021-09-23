@@ -1,6 +1,10 @@
 pipeline {
     agent any
     stages {
+        stage('clean'){
+            echo "mvn clean"
+            bat "mvn clean"
+        }
         stage('build') {
             steps {
                 echo "Build Pipeline DEMO"
