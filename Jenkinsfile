@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 echo "Build Pipeline DEMO"
-                sh "mvn compile"
+                bat "mvn compile"
             }
         }
         stage('deploy') {
             steps {
                 echo "Deploy Pipeline DEMO"
-                sh "mvn install"
+                bat "mvn install"
             }
         }
     }
