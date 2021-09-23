@@ -1,8 +1,11 @@
 <html>
     <head>
-        <script>
+        <script type="text/javascript">
             function addTask(){
-                document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").textContent
+                console.log("Inside AddTask Function")
+                console.log("1 - " + document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML)
+                document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML
+                console.log("2 - document.getElementById("task_list").innerHTML")
             }
         </script>
     </head>
