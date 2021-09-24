@@ -2,19 +2,17 @@
     <head>
         <title>todolist</title>
     </head>
-<body>
+    <body style='margin: auto; width: 300px; height: 300px;'>
+    <h3> ToDoList </h3>
     <input type="text" id = "task"/>
     <button id="btnAddTask">add task</button>
     <div id="task_list"></div>
 
     <script type="text/javascript">
-                    function addTask(){
-                        console.log("Inside AddTask Function");
-                        console.log("1 - " + document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML);
-                        document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML;
-                        console.log("2 -" + document.getElementById("task_list").innerHTML);
-                    }
-                    document.getElementById("btnAddTask").addEventListener("click", addTask, false);
-                </script>
-</body>
+        function addTask(){
+            document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <div id = 'list_item'>" + document.getElementById("task").value + "</div>";
+        }
+        document.getElementById("btnAddTask").addEventListener("click", addTask, false);
+    </script>
+    </body>
 </html>
