@@ -8,7 +8,7 @@
                     console.log("Inside AddTask Function");
                     console.log("1 - " + document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML);
                     document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML + " <br>" + document.getElementById("task").innerHTML;
-                    console.log("2 - document.getElementById("task_list").innerHTML");
+                    console.log("2 -" + document.getElementById("task_list").innerHTML);
                 }
                 document.getElementById("btnAddTask").addEventListener("click", addTask, false);
             </script>
