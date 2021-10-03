@@ -60,12 +60,12 @@
         if(document.getElementById("notask") != null) document.getElementById("notask").remove();
             if(document.getElementById("task").value != ""){
                 document.getElementById("task_list").innerHTML = document.getElementById("task_list").innerHTML +
-                            "<div id = 'list_item' class = 'list_item_parent'> <hr><span class='pure-u-1-2 list_item_title'>" +
+                            "<hr><div id = 'list_item' class = 'list_item_parent'> <span class='pure-u-1-2 list_item_title'>" +
                             document.getElementById("task").value +
                             " </span> "+
                             "<button class='button-success pure-button' id='btnCompleted'>complete</button>" +
                             " <button class='button-error pure-button' id='btnDeleted'>delete</button>"+
-                            "<br><hr></div>";
+                            "</div><br><hr>";
                             document.getElementById("task").value = "";
             }
 
